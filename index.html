@@ -1,13 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Spotnik</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="main">
+
+    <nav class="navbar">
+
+      <span>
+        <a href="" id="brand">Spotnik</a>
+        <img src="" alt="" id="logo">
+      </span>
+
+      <ul id="nav">
+
+        <li>
+          <a href="">Contacts</a>
+        </li>
+
+        <li>
+          <a href="">Support</a>
+        </li>
+
+        <li>
+          <a href="">Version</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <div class="content">
+
+    <div>
+
+    </div>
+
+    <table id="orderTable">
+
+      <thead>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Description</th>
+        <th>Unit Price</th>
+        <th>Total</th>
+      </thead>
+
+      <tbody>
+
+        <tr class="item">
+          <td id="itemName">Dhal Puri</td>
+
+          <td><input type="number" name="" class="quantity" min="0" max="10000"></td>
+
+          <td id="description">N/A</td>
+
+          <td>
+            <select name="" class="price">
+              <option value="26">26</option>
+              <option value="28">28</option>
+            </select>
+          </td>
+
+          <td class="total">
+
+          </td>
+        </tr>
+
+        <tr class="item">
+          <td id="itemName">Buss Up Shot</td>
+
+          <td><input type="number" name="" class="quantity2" min="0" max="10000"></td>
+
+          <td id="description">N/A</td>
+
+          <td>
+            <select name="" class="price2">
+              <option value="26">26</option>
+              <option value="28">28</option>
+            </select>
+          </td>
+
+          <td class="total2">
+
+          </td>
+        </tr>
+
+        <tr class="item">
+          <td id="itemName">Mango 280g</td>
+
+          <td><input type="number" name="" class="quantity3" min="0" max="10000"></td>
+
+          <td id="description">N/A</td>
+
+          <td>
+            <select name="" class="price3">
+              <option value="14">14</option>
+            </select>
+          </td>
+
+          <td class="total3">
+
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
