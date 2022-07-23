@@ -1,45 +1,19 @@
-addEventListener('click', function () {
+addEventListener('change', function () {
 
   let itemList = [];
-  itemList = document.querySelectorAll('.item');
+  itemList = document.getElementsByClassName('item');
 
-  for (let i = 0; i < itemList.length; i++) {
-    const quantity = document.querySelector('.quantity').value;
-    const unitPrice = document.querySelector('.price').value;
+  let value = document.querySelector('#quantity').value * document.querySelector('#price').value;
+  let total = Number(value).toFixed(2);
 
-    let value = (Number(quantity) * Number(unitPrice)).toFixed(2);
+  let value2 = document.querySelector('#quantity2').value * document.querySelector('#price2').value;
+  let total2 = Number(value2).toFixed(2);
 
-    let total = value;
+  let value3 = document.querySelector('#quantity3').value * document.querySelector('#price3').value;
+  let total3 = Number(value3).toFixed(2);
 
-    document.querySelector('.total').innerHTML = `$${total}`;
+  document.querySelector('#total').innerHTML = `$${total}`;
+  document.querySelector('#total2').innerHTML = `$${total2}`;
+  document.querySelector('#total3').innerHTML = `$${total3}`;
 
-    console.log(total)
-  }
-
-  for (let i = 0; i < itemList.length; i++) {
-    const quantity = document.querySelector('.quantity2').value;
-    const unitPrice = document.querySelector('.price2').value;
-
-    let value = (Number(quantity) * Number(unitPrice)).toFixed(2);
-
-    let total = value;
-
-    document.querySelector('.total2').innerHTML = `$${total}`;
-
-    console.log(total)
-  }
-
-  for (let i = 0; i < itemList.length; i++) {
-    const quantity = document.querySelector('.quantity3').value;
-    const unitPrice = document.querySelector('.price3').value;
-
-    let value = (Number(quantity) * Number(unitPrice)).toFixed(2);
-
-    let total = value;
-
-    document.querySelector('.total3').innerHTML = `$${total}`;
-
-    console.log(total)
-  }
-
-})
+});
