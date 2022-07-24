@@ -1,6 +1,6 @@
 const {
     MongoClient
-} = require('mongodb').MongoClient;
+} = require('mongodb');
 
 async function main() {
     /**
@@ -8,6 +8,8 @@ async function main() {
      * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
      */
     const uri = "mongodb+srv://mongo:eQ4oAA62M6fdoagd@wefoods.yhrxghe.mongodb.net/wefoods?retryWrites=true&w=majority";
+
+    console.log(uri);
 
     const client = new MongoClient(uri);
 
@@ -21,8 +23,6 @@ async function main() {
     } finally {
         await client.close();
     }
-
-    console.log(connect);
 
 }
 
