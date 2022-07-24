@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "vite": "^3.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.23.5",
+    "mongodb": "^4.8.0",
+    "mongodb-client-encryption": "^2.1.0"
   }
 }
