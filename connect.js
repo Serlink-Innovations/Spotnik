@@ -22,6 +22,8 @@ async function main() {
         await client.close();
     }
 
+    console.log(connect);
+
 }
 
 main().catch(console.error);
