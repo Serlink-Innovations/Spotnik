@@ -33,6 +33,7 @@ html:focus-within {
 /* Set core body defaults */
 body {
     min-height: 100vh;
+    min-width: 700px;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
@@ -121,31 +122,40 @@ header.main {
 .content {
     padding: 1em;
 
-    #orderTable {
+    .orderTable {
         font-family: Arial, Helvetica, sans-serif;
         border-collapse: collapse;
         min-width: 100%;
     }
 
-    #orderTable td,
-    #orderTable th {
+    .orderTable td,
+    .orderTable th {
+        max-width: 300px;
+        min-width: 100%;
+        display: block;
         border: 1px solid #ddd;
-        padding: 8px;
+        margin: 0;
+        padding: .5em 1em;
     }
 
-    #orderTable tr:nth-child(even) {
+    .orderTable tr {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .orderTable tr:nth-child(even) {
         background-color: #f2f2f2;
     }
 
-    #orderTable tr:hover {
+    .orderTable tr:hover {
         background-color: #ddd;
     }
 
-    #orderTable th {
-        padding-top: 12px;
-        padding-bottom: 12px;
+    .orderTable th {
+        padding: 1em;
         text-align: left;
         background-color: #04AA6D;
         color: white;
     }
+
 }
