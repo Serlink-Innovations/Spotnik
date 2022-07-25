@@ -5,4 +5,4 @@ const connectdb = "mongodb+srv://connectUser:<password>@wefoods.yhrxghe.mongodb.
 mongoose.connect(connectdb, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).then((result) => console.log("Database Connected Successfully")).catch((err) => console.log(`${err} = "Error Connecting to Database"`));
+}).then((result) => console.log("Database Connected Successfully")).catch((err) => console.log(`${err} "Error Connecting to Database"`));
