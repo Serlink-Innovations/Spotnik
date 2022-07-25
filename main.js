@@ -1,5 +1,3 @@
-import './style.css';
-
 /**addEventListener('change', function () {
 
   let itemList = [];
